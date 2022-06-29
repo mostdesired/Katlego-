@@ -7,7 +7,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final FocusNode _uidFocusNode = FocusNode();
+  
 
   Future<FirebaseApp> _initializeFirebase() async {
     FirebaseApp firebaseApp = await Firebase.initializeApp();
@@ -26,11 +26,11 @@ class _LoginScreenState extends State<LoginScreen> {
       return Text('Error initializing Firebase');
     } else if (snapshot.connectionState ==
         ConnectionState.done) {
-      return LoginForm(focusNode: _uidFocusNode);
+      return LoginForm();
     }
     return CircularProgressIndicator(
       valueColor: AlwaysStoppedAnimation<Color>(
-        Colors.orange,
+        Colors.blue,
 
       ),
     );
