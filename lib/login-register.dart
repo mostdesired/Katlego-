@@ -334,7 +334,7 @@ class _LoginRegisterState extends State<LoginRegister> {
       });
     }
 
-    void registerSheet() {
+    /*void registerSheet() {
       _sheetController = _scaffoldKey.currentState.showBottomSheet<void>((BuildContext context) {
         return DecoratedBox(
           decoration: BoxDecoration(color: Theme.of(context).canvasColor),
@@ -477,7 +477,7 @@ class _LoginRegisterState extends State<LoginRegister> {
           ),
         );
       });
-    }
+    }*/
 
     return Scaffold(
         resizeToAvoidBottomPadding: false,
@@ -510,7 +510,7 @@ class _LoginRegisterState extends State<LoginRegister> {
                     color: Colors.white,
                     height: 300,
                   ),
-                  clipper: BottomWaveClipper(),
+                  //clipper: BottomWaveClipper(),
                 ),
                 alignment: Alignment.bottomCenter,
               ),
