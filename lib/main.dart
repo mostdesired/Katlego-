@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfire_samples/screens/login-register.dart';
+import 'login-register.dart';
 
 void main() {
   runApp(MyApp());
