@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'login_form.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -29,7 +30,8 @@ class _LoginScreenState extends State<LoginScreen> {
     }
     return CircularProgressIndicator(
       valueColor: AlwaysStoppedAnimation<Color>(
-        CustomColors.firebaseOrange,
+        Colors.orange,
+
       ),
     );
   },
