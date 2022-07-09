@@ -9,9 +9,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Container(
+      home: Scaffold(
         body: Center(
-          child: Text('Hello world'),
+          TextField(
+            Decoration: InputDecoration(labelText: 'my'),
+          ),
         ),
       ),
     );
