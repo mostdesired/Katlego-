@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,16 @@ class MyApp extends StatelessWidget {
           padding: EdgeInsets.all(15),
           child: TextField(
             decoration: InputDecoration(
-              labelText: 'hello',
+              labelText: 'name',
+              border: OutlineInputBorder(),
+            ),
+          ),
+        ),
+        Container(
+          padding: EdgeInsets.all(15),
+          child: TextField(
+            decoration: InputDecoration(
+              labelText: 'age',
               border: OutlineInputBorder(),
             ),
           ),
