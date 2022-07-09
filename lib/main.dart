@@ -11,14 +11,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Container(
-        height: 80,
-        padding: EdgeInsets.all(30),
-        alignment: Alignment.center,
-        margin: EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          border: Border.all(color: Colors.black, width: 2),
+              child: Column(children: <Widget>[
+        Container(
+          padding: EdgeInsets.all(15),
+          child: TextField(
+            decoration: InputDecoration(
+              labelText: 'hello',
+              border: OutlineInputBorder(),
+            ),
+          ),
         ),
-      )),
+      ]))),
     );
   }
 }
