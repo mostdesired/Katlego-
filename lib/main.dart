@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Container(
-              child: Column(children: <Widget>[
+              child: Row(children: <Widget>[
         Container(
           padding: EdgeInsets.all(15),
           child: TextField(
