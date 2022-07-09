@@ -12,9 +12,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Container(
-              child: Row(children: <Widget>[
+              child: Column(children: <Widget>[
         Container(
           padding: EdgeInsets.all(15),
+          alignment: Alignment.left,
           child: TextField(
             decoration: InputDecoration(
               labelText: 'name',
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.all(15),
+          alignment: Alignment.Right,
           child: TextField(
             decoration: InputDecoration(
               labelText: 'age',
