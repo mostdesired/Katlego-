@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Container(
-        height: 100,
+        height: 80,
         decoration: BoxDecoration(
-          border: Border.all(color: Colors.black, width: 3),
+          border: Border.all(color: Colors.black, width: 2),
         ),
       )),
     );
