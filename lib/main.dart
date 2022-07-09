@@ -9,7 +9,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Hello World',
       home: Scaffold(
         body: Center(
           child: Text('Hello world'),
