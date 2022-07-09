@@ -22,6 +22,10 @@ class MyApp extends StatelessWidget {
                         decoration: InputDecoration(hintText: 'Time'),
                       ),
                     ),
+                    Expanded(
+                      flex: 4,
+                      child: Text("(in mins)/"),
+                    ),
                   ]),
                 ),
               ]),
