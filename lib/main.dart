@@ -10,16 +10,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        Container(
-          padding: EdgeInsets.all(10),
-          child: TextField(
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: 'UserName',
-            ),
-          ),
+          body: Container(
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.black, width: 3),
         ),
-      ),
+      )),
     );
   }
 }
