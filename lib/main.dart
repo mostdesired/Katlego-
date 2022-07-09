@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           Container(
-            padding: const EdgeInsets.all(10),
+            padding: EdgeInsets.all(10),
             child: TextField(
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: 'UserName',
               ),
