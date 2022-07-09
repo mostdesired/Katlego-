@@ -13,12 +13,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyApplication extends StatefulWidget {
-  const MyApplication({Key? key}) : super(key: key);
+//class MyApplication extends StatefulWidget {
+//const MyApplication({Key? key}) : super(key: key);
 
-  @override
-  _MyAppState createState() => new _MyAppState();
-}
+//@override
+//_MyAppState createState() => new _MyAppState();
+//}
 
 //class _MyAppState extends State<MyApplication> {
 //@override
