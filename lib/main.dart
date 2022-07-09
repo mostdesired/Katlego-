@@ -10,13 +10,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          body:Container(
-            height: 80,
-            padding:EdgeInsets.all(30)
-            alignment: Alignment.center,
-            margin: EdgeInsets.all(20),
-            decoration: BoxDecoration(
-            border: Border.all(color: Colors.black, width: 2),
+          body: Container(
+        height: 80,
+        padding: EdgeInsets.all(30),
+        alignment: Alignment.center,
+        margin: EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.black, width: 2),
         ),
       )),
     );
