@@ -11,8 +11,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-          TextField(
-            Decoration: InputDecoration(labelText: 'my'),
+          Container(
+            padding: const EdgeInsets.all(10),
+            child: TextField(
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'UserName',
+              ),
+            ),
           ),
         ),
       ),
