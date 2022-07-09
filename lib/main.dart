@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
               child: Column(children: <Widget>[
         Container(
           padding: EdgeInsets.all(15),
-          alignment: Alignment.left,
+          alignment: Alignment.topLeft,
           child: TextField(
             decoration: InputDecoration(
               labelText: 'name',
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.all(15),
-          alignment: Alignment.Right,
+          alignment: Alignment.topRight,
           child: TextField(
             decoration: InputDecoration(
               labelText: 'age',
