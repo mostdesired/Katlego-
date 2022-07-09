@@ -10,6 +10,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Hello World',
+      home: Scaffold(
+        body: Center(
+          child: Text('Hello world'),
+        ),
+      ),
     );
   }
 }
