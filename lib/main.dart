@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: <Widget>[
           SizedBox(
+            width: 50,
             child: TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           SizedBox(
+            width: 50,
             child: TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
