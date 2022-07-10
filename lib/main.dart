@@ -12,17 +12,19 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: <Widget>[
-          TextField(
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: 'username',
+          SizedBox(
+            width: 100,
+            child: TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'username',
+              ),
             ),
-          ),
-          TextField(
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: 'UserName',
-            ),
+            //TextField(
+            // decoration: InputDecoration(
+            // border: OutlineInputBorder(),
+            //labelText: 'UserName',
+            //),
           ),
         ]),
       ),
