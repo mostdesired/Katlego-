@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: <Widget>[
           TextField(
             decoration: InputDecoration(
-              border: OutlineInputBoder(),
+              border: OutlineInputBorder(),
               labelText: 'username',
             ),
           ),
