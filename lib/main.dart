@@ -21,9 +21,10 @@ class MyApp extends StatelessWidget {
               ),
             ),
             TextField(
-             decoration: InputDecoration(
-             border: OutlineInputBorder(),
-            labelText: 'UserName',
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'UserName',
+              ),
             ),
           ),
         ]),
