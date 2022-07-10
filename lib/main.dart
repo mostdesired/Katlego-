@@ -11,28 +11,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Row(
-          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: <Widget>[
           SizedBox(
-            width: 100,
-            children: <Widget>[
-              TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'username',
-                ),
+            child: TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'username',
               ),
-            ],
-            children: <Widget>[
-              TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'UserName',
-                ),
-              ),
-            ],
+            ),
           ),
-        ),
+          SizedBox(
+            child: TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'UserName',
+              ),
+            ),
+          ),
+        ]),
       ),
     );
   }
