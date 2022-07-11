@@ -105,7 +105,7 @@ class MyApp extends StatelessWidget {
                         db.collection('users').add({
                           'hometown': value
                         });
-                        //Navigator.pop(context);
+                        Navigator.pop(context);
                       }),
                 ),
               ],
