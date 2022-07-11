@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
               children: [
                 Expanded(
                   child: ListTile(
-                    title: Text('Department'),
+                    title: Text('Name'),
                     subtitle: TextFormField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                        hintText: '  Department',
+                        hintText: 'Enter your name',
                       ),
                     ),
                   ),
@@ -32,11 +32,11 @@ class MyApp extends StatelessWidget {
                 ),
                 Expanded(
                   child: ListTile(
-                    title: Text('Year Of Study'),
+                    title: Text('Surname'),
                     subtitle: TextFormField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                        hintText: '  Year Of Study',
+                        hintText: 'Enter surname',
                       ),
                     ),
                   ),
@@ -48,11 +48,11 @@ class MyApp extends StatelessWidget {
               children: [
                 Expanded(
                   child: ListTile(
-                    title: Text('Depart'),
+                    title: Text('Gender'),
                     subtitle: TextFormField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                        hintText: '  Depart',
+                        hintText: 'Gender',
                       ),
                     ),
                   ),
@@ -62,11 +62,11 @@ class MyApp extends StatelessWidget {
                 ),
                 Expanded(
                   child: ListTile(
-                    title: Text('Year  Study'),
+                    title: Text('Hometown'),
                     subtitle: TextFormField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                        hintText: '  Year  Study',
+                        hintText: 'Where do stay',
                       ),
                     ),
                   ),
