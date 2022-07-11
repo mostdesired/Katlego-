@@ -77,8 +77,7 @@ class MyApp extends StatelessWidget {
              height: 17,
             ),
             //row3
-            Row(
-              CrossAxisAlignment crossAxisAlignment: CrossAxisAlignment.center,
+            Row(MainAxisAlignment mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   height: 30,
