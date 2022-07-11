@@ -79,11 +79,11 @@ class MyApp extends StatelessWidget {
             //row3
             Row(
               children: [
-                Expanded(
-                  //height: 50,
-                  //padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                Container(
+                  height: 10,
+                  padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: ElevatedButton(
-                      child: const Text('Login'),
+                      child: const Text('SUBMIT'),
                       onPressed: () {
                         //print(nameController.text);
                         //print(passwordController.text);
