@@ -13,26 +13,14 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Column(
           children: [
-            // ListTile(
-            //: Text('Full Name'),
-            //subtitle: TextFormField(
-            //decoration: const InputDecoration(
-            // border: OutlineInputBorder(
-            // borderRadius: BorderRadius.all(Radius.circular(8))),
-            // hintText: 'Full Name',
-            //),
-            // ),
-            //),
-            //SizedBox(
-            // height: 5,
-            //),
+            //row1
             Row(
               children: [
                 Expanded(
                   child: ListTile(
                     title: Text('Department'),
                     subtitle: TextFormField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
                         hintText: '  Department',
                       ),
@@ -46,7 +34,7 @@ class MyApp extends StatelessWidget {
                   child: ListTile(
                     title: Text('Year Of Study'),
                     subtitle: TextFormField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
                         hintText: '  Year Of Study',
                       ),
@@ -54,7 +42,37 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
+            //row2
+            Row(
+              children: [
+                Expanded(
+                  child: ListTile(
+                    title: Text('Depart'),
+                    subtitle: TextFormField(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
+                        hintText: '  Depart',
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 6,
+                ),
+                Expanded(
+                  child: ListTile(
+                    title: Text('Year  Study'),
+                    subtitle: TextFormField(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
+                        hintText: '  Year  Study',
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
