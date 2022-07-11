@@ -73,11 +73,12 @@ class MyApp extends StatelessWidget {
                 ),
               ],
             ),
-             SizedBox(
-             height: 17,
+            SizedBox(
+              height: 17,
             ),
             //row3
-            Row(MainAxisAlignment mainAxisAlignment: MainAxisAlignment.center,
+            Row(
+              //MainAxisAlignment mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   height: 30,
