@@ -66,7 +66,7 @@ class MyApp extends StatelessWidget {
                     subtitle: TextFormField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                        hintText: 'Where do stay',
+                        hintText: 'Where do you stay',
                       ),
                     ),
                   ),
