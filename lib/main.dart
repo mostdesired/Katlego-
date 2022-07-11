@@ -84,11 +84,11 @@ class MyApp extends StatelessWidget {
                   //padding: const EdgeInsets.fromLTRB(left, top, right, bottom)(10, 0, 10, 0),
                   child: ElevatedButton(
                       child: const Text('SUBMIT'),
+                      alignment: Alignment.center,
                       onPressed: () {
                         //print(nameController.text);
                         //print(passwordController.text);
                       }),
-                  alignment: Alignment.center,
                 ),
               ],
             ),
