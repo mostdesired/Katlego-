@@ -13,20 +13,22 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: <Widget>[
           SizedBox(
-            width: 50,
-            child: TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'username',
-              ),
-            ),
-          ),
+              width: 700,
+              color: Colors.blue,
+              child: TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'username',
+                  contentPadding: EdgeInsets.symmetric(horizontal: 20), // <-- SEE HERE
+                ),
+              )),
           SizedBox(
-            width: 50,
+            width: 100,
             child: TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: 'UserName',
+                contentPadding: EdgeInsets.symmetric(horizontal: 20), // <-- SEE HERE
               ),
             ),
           ),
