@@ -73,21 +73,26 @@ class MyApp extends StatelessWidget {
                 ),
               ],
             ),
-          ],
-          SizedBox(
-                  height: 6,
+            SizedBox(
+              width: 7,
+            ),
+            //row3
+            Row(
+              children: [
+                Expanded(
+                  //height: 50,
+                  //padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                  child: ElevatedButton(
+                      child: const Text('Login'),
+                      onPressed: () {
+                        //print(nameController.text);
+                        //print(passwordController.text);
+                      }),
                 ),
-          Container(
-              //height: 50,
-              //padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-              child: ElevatedButton(
-                child: const Text('Login'),
-                onPressed: () {
-                  //print(nameController.text);
-                  //print(passwordController.text);
-                  }
-              ),
-         ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
