@@ -73,14 +73,14 @@ class MyApp extends StatelessWidget {
                 ),
               ],
             ),
-            // SizedBox(
-            // height: 7,
-            //),
+             SizedBox(
+             height: 17,
+            ),
             //row3
             Row(
+              CrossAxisAlignment crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                  alignment: Alignment.center,
                   height: 30,
                   //padding: const EdgeInsets.fromLTRB(left, top, right, bottom)(10, 0, 10, 0),
                   child: ElevatedButton(
