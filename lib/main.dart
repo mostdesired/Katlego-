@@ -73,15 +73,15 @@ class MyApp extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
-              height: 7,
-            ),
+            // SizedBox(
+            // height: 7,
+            //),
             //row3
             Row(
               children: [
                 Container(
-                  height: 10,
-                  padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                  height: 70,
+                  //padding: const EdgeInsets.fromLTRB(left, top, right, bottom)(10, 0, 10, 0),
                   child: ElevatedButton(
                       child: const Text('SUBMIT'),
                       onPressed: () {
