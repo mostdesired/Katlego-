@@ -74,7 +74,7 @@ class MyApp extends StatelessWidget {
               ],
             ),
             SizedBox(
-              width: 7,
+              height: 7,
             ),
             //row3
             Row(
