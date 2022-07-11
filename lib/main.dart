@@ -80,7 +80,7 @@ class MyApp extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  height: 70,
+                  height: 30,
                   //padding: const EdgeInsets.fromLTRB(left, top, right, bottom)(10, 0, 10, 0),
                   child: ElevatedButton(
                       child: const Text('SUBMIT'),
@@ -88,6 +88,7 @@ class MyApp extends StatelessWidget {
                         //print(nameController.text);
                         //print(passwordController.text);
                       }),
+                  alignment: Alignment.center,
                 ),
               ],
             ),
