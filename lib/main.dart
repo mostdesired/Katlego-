@@ -1,9 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
+
+final db = FirebaseFirestore.instance;
+String? value;
 
 class MyApp extends StatelessWidget {
   @override
@@ -86,8 +93,19 @@ class MyApp extends StatelessWidget {
                   child: ElevatedButton(
                       child: const Text('SUBMIT'),
                       onPressed: () {
-                        //print(nameController.text);
-                        //print(passwordController.text);
+                        db.collection('users').add({
+                          'name': value
+                        });
+                        db.collection('users').add({
+                          'surname': value
+                        });
+                        db.collection('users').add({
+                          'gender': value
+                        });
+                        db.collection('users').add({
+                          'hometown': value
+                        });
+                        Navigator.pop(context);
                       }),
                 ),
               ],
