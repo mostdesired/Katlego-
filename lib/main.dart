@@ -11,10 +11,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: <Widget>[
+        body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, color: Colors.blue, children: <Widget>[
           SizedBox(
               width: 700,
-              color: Colors.blue,
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
