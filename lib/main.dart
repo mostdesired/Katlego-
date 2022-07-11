@@ -11,22 +11,52 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: <Widget>[
-          TextField(
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: 'username',
-              contentPadding: EdgeInsets.symmetric(horizontal: 20), // <-- SEE HERE
-            ),
-          ),
-          TextField(
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: 'UserName',
-              contentPadding: EdgeInsets.symmetric(horizontal: 20), // <-- SEE HERE
-            ),
-          ),
-        ]),
+        body: Column(
+          children: [
+            // ListTile(
+            //: Text('Full Name'),
+            //subtitle: TextFormField(
+            //decoration: const InputDecoration(
+            // border: OutlineInputBorder(
+            // borderRadius: BorderRadius.all(Radius.circular(8))),
+            // hintText: 'Full Name',
+            //),
+            // ),
+            //),
+            //SizedBox(
+            // height: 5,
+            //),
+            Row(
+              children: [
+                Expanded(
+                  child: ListTile(
+                    title: Text('Department'),
+                    subtitle: TextFormField(
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
+                        hintText: '  Department',
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Expanded(
+                  child: ListTile(
+                    title: Text('Year Of Study'),
+                    subtitle: TextFormField(
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
+                        hintText: '  Year Of Study',
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
